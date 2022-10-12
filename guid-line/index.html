@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/fav.png" />
+  <!-- <meta name="robots" content="index, follow"> -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" >
+  <link rel="stylesheet" type="text/css" href="scss/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/prism.css" >
+  <title>コーディングガイドラインサイト</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="article.html">News</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- メインビジュアルここから -->
+    <section class="wrapper_top01">
+      <div class="container">
+        <h1>CORDING GUIDE LINE</h1>
+        <p><span>2022</span>/GreenHill</p>
+      </div>
+    </section><!--　ここまで -->
+
+    <!-- Aboutここから -->
+    <section class="wrapper wrapper_top02" id="about">
+      <div class="container">
+        <h2 class="text_head01">About<span class="tetx_subhead">私たちについて</span></h2>
+        <p class="text_begining">意味のあるまとまりは<strong>sectionタグ</strong>を使う。ここでは全体(ピンク背景)と01~03の項目をsectionタグで囲んでいる。</p>
+        <div class="code_bg">
+          <pre>
+            <code class="language-markup">
+    &lt;section class="wrapper wrapper_top02" id="about"&gt;
+      &lt;div class="container"&gt;
+        &lt;h2 class="text_head01"&gt;About&lt;span class="tetx_subhead"&gt;私たちについて&lt;/span&gt;&lt;/h2&gt;
+        &lt;p class="text_begining"&gt;
+          意味のあるまとまりはsectionタグを使う。ここでは全体(ピンク背景)と01~03の項目をsectionタグで囲んでいる。
+        &lt;/p&gt;
+        &lt;section class="top02_box"&gt;
+          &lt;h3&gt;01.経営理念&lt;/h3&gt;
+          &lt;p&gt;テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class="top02_box"&gt;
+          &lt;h3&gt;02.事業内容&lt;/h3&gt;
+          &lt;p&gt;テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class="top02_box"&gt;
+          &lt;h3&gt;03.メンバー紹介&lt;/h3&gt;
+          &lt;p&gt;テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト&lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+            </code>
+          </pre>
+        </div>
+        <section class="top02_box">
+          <h3>01.経営理念</h3>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+        <section class="top02_box">
+          <h3>02.事業内容</h3>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+        <section class="top02_box">
+          <h3>03.メンバー紹介</h3>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </section>
+      </div>
+    </section><!-- ここまで -->
+
+    <!-- Worksここから -->
+    <section class="wrapper wrapper_top03" id="works">
+      <div class="container">
+        <h2 class="text_head01">Works<span class="tetx_subhead">制作実績</span></h2>
+        <p class="text_begining">
+          この場合の画像は<strong>figureタグは使わない</strong>。(補足的な意味を持つ画像でないため）<br>
+          ここでは。各実績のレイアウトを整える為の親要素にdivタグを使っている。
+        </p>
+        <div class="code_bg">
+          <pre>
+            <code class="language-markup">
+    &lt;div class="top03_area"&gt;
+      &lt;div class="top03_box"&gt;
+        &lt;img src="#" alt=""&gt;
+        &lt;p&gt;株式会社〇〇様&lt;br&gt;オフィシャルサイト&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="top03_box"&gt;
+        &lt;img src="#" alt=""&gt;
+        &lt;p&gt;株式会社〇〇様&lt;br&gt;オフィシャルサイト&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="top03_box"&gt;
+        &lt;img src="#" alt=""&gt;
+        &lt;p&gt;株式会社〇〇様&lt;br&gt;オフィシャルサイト&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="top03_box"&gt;
+        &lt;img src="#" alt=""&gt;
+        &lt;p&gt;株式会社〇〇様&lt;br&gt;オフィシャルサイト&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+        <div class="top03_area">
+          <div class="top03_box">
+            <img src="#" alt="">
+            <p>株式会社〇〇様<br>オフィシャルサイト</p>
+          </div>
+          <div class="top03_box">
+            <img src="#" alt="">
+            <p>株式会社〇〇様<br>オフィシャルサイト</p>
+          </div>
+          <div class="top03_box">
+            <img src="#" alt="">
+            <p>株式会社〇〇様<br>オフィシャルサイト</p>
+          </div>
+          <div class="top03_box">
+            <img src="#" alt="">
+            <p>株式会社〇〇様<br>オフィシャルサイト</p>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#">詳しくはこちら</a>
+        </div>
+      </div>
+    </section><!--　ここまで -->
+
+    <!-- Newsここから -->
+    <section class="wrapper wrapper_top04">
+      <div class="container">
+        <h2 class="text_head01">News<span class="tetx_subhead">お知らせ</span></h2>
+        <p class="text_begining">
+          お知らせのリストはul > liタグやtableタグで作成。日時は<strong>timeタグ</strong>を使うようにする。<br>
+          <strong>articleタグはnews詳細ページで使用</strong>。
+        </p>
+        <div class="code_bg">
+          <pre>
+            <code class="language-markup">
+    &lt;li&gt;
+      &lt;a href="test_article.html"&gt;
+        &lt;div class="top04_img"&gt;
+          &lt;img src="#" alt=""&gt;
+        &lt;/div&gt;
+        &lt;div class="top04_text"&gt;
+          &lt;time&gt;2022.00.00&lt;/time&gt;
+          &lt;p&gt;テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+            </code>
+          </pre>
+        </div>
+        <ul>
+          <li>
+            <a href="test_article.html">
+              <div class="top04_img">
+                <img src="#" alt="">
+              </div>
+              <div class="top04_text">
+                <time>2022.00.00</time>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="test_article.html">
+              <div class="top04_img">
+                <img src="#" alt="">
+              </div>
+              <div class="top04_text">
+                <time>2022.00.00</time>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="test_article.html">
+              <div class="top04_img">
+                <img src="#" alt="">
+              </div>
+              <div class="top04_text">
+                <time>2022.00.00</time>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="btn">
+          <a href="test_article.html">詳しくはこちら</a>
+        </div>
+      </div>
+    </section><!--　ここまで -->
+
+    <!-- Contactここから -->
+    <section class="wrapper wrapper_top05" id="contact">
+      <div class="container">
+        <p class="text_begining">
+          お問い合わせフォームはformタグを使って作成。確認ページ・サンクスページは要望によって作成。<br>
+          WP化の際はプラグイン「Contact Form7 」を組み込むことを推奨する。
+        </p>
+        <form action="送信先のURL" method="post">
+          <table>
+            <tr>
+              <th>
+                <label for="your-name">お名前</label>
+              </th>
+              <td>
+                <input type="text" name="name" id="your-name">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="your-hurigana">ふりがな</label>
+              </th>
+              <td>
+                <input type="text" name="hurigana" id="your-hurigana">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="your-tel">電話番号</label>
+              </th>
+              <td>
+                <input type="tel" name="tel-number" id="your-tel">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="your-email">メールアドレス</label>
+              </th>
+              <td>
+                <input type="email" name="mail-adless" id="your-email">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="text-area">お問い合わせ内容</label>
+              </th>
+              <td>
+                <textarea name="contact-text" id="text-area" cols="30" rows="10"></textarea>
+              </td>
+            </tr>
+          </table>
+          <button type="submit">送信する</button>
+        </form>
+      </div>
+    </section><!--　ここまで -->
+  </main>
+
+  <!-- バナーエリア -->
+  <aside class="wrapper wrapper_top06">
+    <div class="container">
+      <p class="text_begining">バナー広告、関連記事、補足情報などのエリアは<strong>asideタグ</strong>で囲む。</p>
+      <div class="code_bg">
+        <pre>
+        <code class="language-markup">
+    &lt;aside class="wrapper wrapper_top06"&gt;
+      &lt;div class="container"&gt;
+        &lt;p class="text_begining"&gt;
+          バナー広告、関連記事、補足情報などのエリアは&lt;strong&gt;asideタグ&lt;/strong&gt;で囲む。
+        &lt;/p&gt;
+        &lt;div class="top06_area"&gt;
+          &lt;div class="top06_box"&gt;&lt;img src="#" alt=""&gt;&lt;/div&gt;
+          &lt;div class="top06_box"&gt;&lt;img src="#" alt=""&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/aside&gt;
+        </code>
+        </pre>
+      </div>
+      <div class="top06_area">
+        <div class="top06_box"><img src="#" alt=""></div>
+        <div class="top06_box"><img src="#" alt=""></div>
+      </div>
+    </div>
+  </aside><!-- ここまで -->
+
+  <footer>
+    <div class="container">
+      <div class="logo"><img src="images/logo.png" alt=""></div>
+      <small>© 2021 GreenHill inc.</small>
+    </div>
+  </footer>
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/prism.js"></script>
+  <script>
+    // https://github.com/protonet/jquery.inview /で対応
+    $('.scroll').on('inview', function () { // .sxrollが表示されたら
+      $(this).addClass('active'); //処理を記述
+    });
+  </script>
+</body>
+
+</html>

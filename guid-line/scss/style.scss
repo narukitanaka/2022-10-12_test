@@ -1,0 +1,373 @@
+@charset "utf-8";
+@use "common"as c;
+@use "variable"as v;
+@use "header";
+@use "footer";
+
+.wrapper{
+  padding: 120px 0;
+}
+.container{
+  @include c.base_width;
+}
+// トップ共通
+.text_head01{
+  position: relative;
+  text-align: center;
+  font-size: v.$text-size-head;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.tetx_subhead{
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: v.$text-size-subhead;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.text_begining{
+  text-align: center;
+  margin-bottom: 40px;
+}
+// リンクボタン共通
+.btn{
+  a{
+    display: block;
+    background: #fff;
+    width: 200px;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+  }
+}
+// 下層ページ共通
+.sub-title{
+  padding: 120px 0 60px;
+  background: #add8e6;
+  .container{
+    position: relative;
+    background: #666;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_head02{
+    position: relative;
+    font-size: v.$text-size-head;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #fff;
+    .tetx_subhead02{
+      width: 100%;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      text-align: center;
+      font-size: v.$text-size-subhead;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+
+// Top_mv　メインビジュアル
+.wrapper_top01{
+  width: 100vw;
+  height: 100vh;
+  background: #90ee90;
+  .container{
+    height: 100%;
+    position: relative;
+    h1{
+      position: absolute;
+      top: 60%;
+      right: 0;
+      transform: translateY(-60%);
+      font-size: 4rem;
+      background: #fff;
+      padding: 10px 20px;
+    }
+    p{
+      position: absolute;
+      top: 70%;
+      right: 0;
+      transform: translateY(-60%);
+      background: #fff;
+      padding: 10px 20px;
+    }
+  }
+}
+
+// Top_about　私たちについて
+.wrapper_top02{
+  background: #ffb6c1;
+  .top02_box{
+    padding: 40px;
+    background: #fff;
+    h3{
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    &:not(:last-of-type){
+      margin-bottom: 20px;
+    }
+  }
+  
+}
+
+// Top_works　制作実績
+.wrapper_top03{
+  background: #1e90ff;
+  .top03_area{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 40px;
+    .top03_box{
+      width: 250px;
+      img{
+        width: 100%;
+        height: 250px;
+        background-color: #fff;
+        margin-bottom: 10px;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Top_news　お知らせ
+.wrapper_top04{
+  background: #ffa500;
+  ul{
+    width: 100%;
+    margin-bottom: 40px;
+    li{
+      border-top: 1px solid #333;
+      padding: 20px 0 0;
+      a{
+        display: flex;
+        column-gap: 40px;
+        align-items: flex-end;
+        .top04_img{
+          width: 100px;
+          img{
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+          }
+        }
+        .top04_text{
+          padding: 20px 0;
+          time{
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &:last-of-type{
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
+      }
+      &:not(:last-of-type){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Top_contact　お問い合わせ 
+.wrapper_top05{
+  background: #eee8aa;
+  form{
+    width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    table{
+      width: 100%;
+      tr{
+        th{
+          width: 100%;
+          display: block;
+          font-weight: normal;
+          margin-bottom: 10px;
+        }
+        td{
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+          input{
+            width: 100%;
+            height: 40px;
+            background: #f5f5f5;
+            padding: 20px;
+          }
+          textarea{
+            width: 100%;
+            background: #f5f5f5;
+            padding: 20px;
+          }
+        }
+      }
+    }
+    button{
+      width: 100%;
+      padding: 15px 0;
+      background: #666;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+// バナーエリア
+.wrapper_top06{
+  background: #dda0dd;
+  .top06_area{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    .top06_box{
+      position: relative;
+      width: 550px;
+      height: 200px;
+      img{
+        width: 100%;
+        height: 200px;
+        background: #666;
+      }
+      &::after{
+        content: "Banner";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// Newsページ
+.wrapper_news01{
+  background-color: #add8e6;
+  padding-bottom: 120px;
+  h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .news01_area{
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    .center{
+      text-align: center;
+      h2{
+        position: relative;
+        display: inline-block;
+        margin: 0 auto 40px;
+        font-size: 1.5rem;
+        text-align: center;
+        &::before{
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: #ffa500;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+        }
+      }
+    }
+    .news01_box{
+      display: flex;
+      justify-content: space-between;
+      figure{
+        width: 30%;
+        img{
+          width: 100%;
+          height: 250px;
+          background: #f5f5f5;
+          margin-bottom: 10px;
+        }
+      }
+      p{
+        width: 65%;
+        line-height: 2;
+        br{
+          display: block;
+          content: "";
+          margin-bottom: 10px;
+        }
+      }
+    }
+    // &:not(:last-of-type){
+    //   margin-bottom: 20px;
+    // }
+  }
+}
+.wrapper_news02{
+  background-color: #dda0dd;;
+  // padding: 60px 0 120px;
+  h2{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    li{
+      width: 250px;
+      a{
+        padding: 10px;
+        .news02_img{
+          width: 100%;
+          margin-bottom: 10px;
+          img{
+            width: 100%;
+            height: 250px;
+            background: #fff;
+          }
+        }
+        time{
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// ソースコード
+.code_bg{
+  position: relative;
+  margin-bottom: 40px;
+  &::before{
+    content: "";
+    width: 50px;
+    height: 30px;
+    border-bottom: 30px solid #272822;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,30 @@
+@use "variable"as v;
+@use "common"as c;
+/*************************************************
+header
+*************************************************/
+header{
+  position: fixed;
+  width: 100%;
+  background: #f5deb3;
+  padding: 20px 0;
+  z-index: 1;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .logo{
+      width: 200px;
+      img{
+        width: 100%;
+      }
+    }
+    ul{
+      display: flex;
+      column-gap: 60px;
+      li{
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
